@@ -80,10 +80,8 @@ traduzir as mensagens você pode usar esta ferramenta incrível
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the
-[issue guidelines](https://github.com/Ismaestro/angular-example-app/blob/master/CONTRIBUTING.md)
-and search for existing and closed issues. If your problem or idea is not addressed yet,
-[please open a new issue](https://github.com/Ismaestro/angular-example-app/issues/new).
+Tem um bug ou uma solicitação de recurso? Leia primeiro as diretrizes do problema e pesquise os problemas existentes e encerrados. 
+Se o seu problema ou ideia ainda não foi resolvido, abra um novo problema.
 
 ## Creators
 
