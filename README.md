@@ -103,6 +103,6 @@ seu retorno!
 ## Copyright and license
 
 Code and documentation copyright 2021 the authors. Code released under the
-[MIT License](https://github.com/Ismaestro/angular-example-app/blob/master/LICENSE).
+[MIT License]().
 
 Enjoy :metal:
