@@ -83,6 +83,8 @@ traduzir as mensagens você pode usar esta ferramenta incrível
 Tem um bug ou uma solicitação de recurso? Leia primeiro as diretrizes do problema e pesquise os problemas existentes e encerrados. 
 Se o seu problema ou ideia ainda não foi resolvido, abra um novo problema.
 
+[please open a new issue](https://github.com/Hudsonjr90/Angularproject/issues/new)
+
 ## Creators
 
 **Hudson Kennedy**
