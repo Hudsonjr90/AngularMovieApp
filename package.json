@@ -27,7 +27,7 @@
   },
   "private": true,
   "engines": {
-    "node": ">=14"
+    "node": "14.x"
   },
   "lint-staged": {
     "*.{js,css,md}": "prettier --write"
