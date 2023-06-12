@@ -1,0 +1,61 @@
+@import "../../variables.scss";
+@mixin display($display,$align-items,$justify-content){
+    display:$display;
+    align-items:$align-items;
+    justify-content:$justify-content;
+}
+#movie-list {
+ ul {
+    @include display(flex,flex-end,space-evenly);
+    flex-wrap: wrap;
+    padding:25px;
+
+    &   li{
+        width:300px;
+        height:400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: $text-color;
+        margin-bottom: 12px;
+
+        & a {
+            text-decoration: none;
+            display: block;
+            background: rgba($bg-color,0.5);
+            padding:12px 25px;
+            color:$text-color;
+            border:1px solid $text-color;
+            margin:2px;
+        }
+    }
+ }
+
+ .movie--search{
+    width: 100%;
+    background-color:$secondary-color;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:15px 0;
+    input {
+        width:50vw;
+        height:40px;
+        border-radius: 5px;
+        text-indent: 5px;
+        border:none;
+        margin-right:25px;
+        font-size:24px;
+    }
+    input:focus,input:hover{
+        border:none;
+        outline: none;
+    }
+ }
+
+}
+.skeleton-container {
+    background-color: red;
+}

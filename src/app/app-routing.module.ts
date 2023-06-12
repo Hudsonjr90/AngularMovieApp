@@ -1,26 +1,70 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RoutesConfig } from './configs/routes.config';
-
+import { AppComponent } from './app.component';
+import { ContactusComponent } from './components/contactus/contactus.component';
+import { FullDetailComponent } from './components/full-detail/full-detail.component';
+import { MovieListComponent } from './components/movie-list/movie-list.component';
+import { MovieComponent } from './components/movie/movie.component';
+import { ReactiveCvComponent } from './components/reactive-cv/reactive-cv.component';
+import { FirstmenuComponent } from './components/routes/firstmenu/firstmenu.component';
+import { NotFoundComponent } from './components/routes/not-found/not-found.component';
+import { ProductComponent } from './components/routes/product/product.component';
+import { SecondmenuComponent } from './components/routes/secondmenu/secondmenu.component';
+import { TyperComponent } from './components/typer/typer.component';
+import {ScrollingsComponent} from "./components/scrollings/scrollings.component";
 const routes: Routes = [
-  { path: RoutesConfig.basePaths.auth, loadChildren: () => import('./modules/auth/auth.module').then(m => m.AuthModule) },
-  { path: RoutesConfig.basePaths.hero, loadChildren: () => import('./modules/hero/hero.module').then(m => m.HeroModule) },
-  { path: '**', redirectTo: RoutesConfig.routes.error404 }
+  {
+    path:"",
+    component:MovieListComponent
+  },
+  {
+    path:"movies",
+    component:MovieListComponent
+  }
+  ,
+  {
+    path:"movie/detail/:id",
+    component:MovieComponent
+  },
+  {
+    path:"movie/full-detail/:id",
+    component:FullDetailComponent
+  },
+  {
+    path:"contact-us",
+    component:ContactusComponent
+  },
+  {
+    path:"reactive-cv",
+    component:ReactiveCvComponent
+  },
+  {
+    path:"routes",
+    component:FirstmenuComponent
+  },
+  {
+    path:"sub-menu/here",
+    component:SecondmenuComponent
+  },{
+    path:"product/:id/:name",
+    component:ProductComponent
+  },
+  {
+    path:"typer",
+    component:TyperComponent
+  },
+  {
+    path:"scrolling",
+    component:ScrollingsComponent
+  }
+  ,{
+    path:"**",
+    component:NotFoundComponent
+  }
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes, {
-      initialNavigation: 'enabled',
-      scrollPositionRestoration: 'enabled',
-      anchorScrolling: 'enabled',
-      relativeLinkResolution: 'legacy'
-    })
-  ],
-  exports: [
-    RouterModule
-  ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-
-export class AppRoutingModule {
-}
+export class AppRoutingModule { }

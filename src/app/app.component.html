@@ -1,10 +1,16 @@
-<div>
-  <app-header></app-header>
-  <router-outlet *ngIf="isOnline;else isOffline"></router-outlet>
-  <ng-template #isOffline>
-    <div>
-      <p class="offline-error" i18n="@@offlineMessage">Without connection we can not load anything!</p>
-    </div>
-  </ng-template>
+<div class="m-0 p-0">
+  <section class="new-banner">
+    <nav>
+      <a routerLink="/reactive-cv">CV Creator</a>
+      <a routerLink="/">Movie List</a>
+      <a routerLink="/contact-us">Contact Us</a>
+      <a routerLink="/routes">Routes</a>
+      <a routerLink="/typer">Typer</a>
+      <a routerLink="/scrolling">Scrolling Types</a>
+    </nav>
+  </section>
+  <div class="container">
+    .
+    <router-outlet><!-- Routes work dynamically! --></router-outlet>
+  </div>
 </div>
-<app-footer></app-footer>
