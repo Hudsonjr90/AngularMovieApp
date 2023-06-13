@@ -37,14 +37,15 @@ import { ScrollingsComponent } from './components/scrollings/scrollings.componen
     NotFoundComponent,
     TyperComponent,
     ScrollingsComponent,
-    Ng2SearchPipeModule,
-    NgxSkeletonLoaderModule,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    Ng2SearchPipeModule,
+    NgxSkeletonLoaderModule.forRoot(),
     ReactiveFormsModule
   ],
   providers: [],
